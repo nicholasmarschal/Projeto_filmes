@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto de biblioteca de filmes</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div  class="jumbo">
+<h4>
+    <div id="botoes"><br>
+
+        <button  class="btn btn-primary btn-block"  onclick="mostraVerFilmes()">procurar filmes</button>
+        <button  class="btn btn-primary btn-block"  onclick="mostraAddFilmes()">adiciona filmes</button>
+        <button  class="btn btn-primary btn-block"  onclick="mostraTodosFilmes()">Ver filmes adicionados</button>
+        <button  class="btn btn-primary btn-block"  onclick="mostraQuantidadeFilmes()">Ver quantidade de filmes adicionados</button>
+
+    </div>
+
+    <div id="verfilmes" class="verfilmes"><br>
+        
+            Digite um numero para retorna o filme <br>
+            filme retornado <br> 
+            Título: <span id="ti"></span><br>
+            Diretor: <span id="di"></span><br>
+            Data: <span id="da"></span><br>
+            Duração: <span id="du"></span><br>
+            Idioma: <span id="id"></span><br>
+
+            <input type="text"  id="res" placeholder="Digite aqui um numero para retorna um filme" size="50px"><br>
+            <button  class="btn btn-primary btn-block" onclick="verFilmes()">Acessar</button>
+            <button  class="btn btn-primary btn-block" onclick="sairVerFilmes()">Volta</button>
+
+    </div>
+
+    <div id="addfilmes" class="addfilmes"><br>
+        Digite o nome do filme a ser adicionado: <br><input type="text"  id="tit" placeholder="Digite aqui o nome do filme a ser adicionado" size="50px"><br>
+        Digite o nome do diretor a ser adicionado:<br>  <input type="text"  id="dir" placeholder="Digite aqui o nome do diretor a ser adicionado" size="50px"><br>
+        Digite a data a ser adicionado:<br>     <input type="text"  id="dat" placeholder="Digite aqui a data a ser adicionado" size="50px"><br>
+        Digite a duração a ser adicionado:<br>  <input type="text"  id="dur" placeholder="Digite aqui a duração a ser adicionado" size="50px"><br>
+        Digite o idioma a ser adicionado:<br>   <input type="text"  id="idi" placeholder="Digite aqui o idioma a ser adicionado" size="50px"><br>
+        <button  class="btn btn-primary btn-block" onclick="adicionaFilmes()">Enviar</button>
+        <button  class="btn btn-primary btn-block" onclick="mostraFilmesAdicionado()">Mostra filme adicionado</button>
+        <button  class="btn btn-primary btn-block" onclick="sairAddFilmes()">Volta</button>
+   
+    </div>   
+
+    <div id="filmesadicionado" class="filmesadicionado"><br>   
+        Filme Adicionado <br> 
+        Título: <span id="titulo"></span><br>
+        Diretor: <span id="diretor"></span><br>
+        Data: <span id="data"></span><br>
+        Duração: <span id="duracao"></span><br>
+        Idioma: <span id="idioma"></span><br>
+        <button  class="btn btn-primary btn-block" onclick="sairFilmesAdicionado()">Volta</button>
+
+    </div>
+
+    <div id="todosfilmes"><br>
+
+            <button  class="btn btn-primary btn-block" onclick="verFil()">Ver todos os filmes</button>
+            <button  class="btn btn-primary btn-block" onclick="sairTodosFilmes()">Volta</button>
+
+    </div>
+
+    <div id="quantidadefilmes" class="quantidadedefilmes"><br>
+
+        Quantitade de filmes: <span id="quantidade"></span><br>
+        <button  class="btn btn-primary btn-block" onclick="quantidadeFil()">Ver quantidade de filmes</button>
+        <button  class="btn btn-primary btn-block" onclick="sairQuantidadeFilmes()">Volta</button>
+
+    </div>
+</h4>
+</div>
+
+</body>
+<script src="ajax/codigosajax.js" defer></script>
+<script src="jQuery/codigosjQuery.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>
